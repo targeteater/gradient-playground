@@ -10,7 +10,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "@/components/ui/card"
 import {
   AlertDialog,
   AlertDialogAction,
@@ -21,11 +21,12 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
+} from "@/components/ui/alert-dialog"
 
 export default function Home() {
   return (
     <>
+      {/* navbar that has a glass effect and is transparent but anything under it becomes blurry and theres a border on the bottom */}
       <nav className="fixed inset-x-0 top-0 z-10 bg-white bg-opacity-0 backdrop-blur-md border-b border-black-200">
         <div className="container mx-auto flex items-center justify-between p-2.5">
           <div className="flex items-center gap-4">
@@ -50,7 +51,7 @@ export default function Home() {
             <Badge className="mb-1">Certified&nbsp;<span className="text-green-600 font-bold">skid!</span></Badge>
             <div className="relative">
               <Label className="text-4xl font-bold mb-2 leading-tight">
-                Welcome to sigma portfolio <span className="text-green-500 mb-4">targeteater.</span>
+                Welcome to sigma portofolio <span className="text-green-500 mb-4">targeteater.</span>
               </Label>
             </div>
             <div className="flex gap-2">
@@ -61,6 +62,7 @@ export default function Home() {
         </div>
       </main>
 
+      {/* a project tab that consists of my projects like 4 cards anda  My recent projects */}
       <section className="py-24">
         <div className="container mx-auto flex items-center justify-center">
           <div className="flex flex-col items-center gap-4">
@@ -78,7 +80,7 @@ export default function Home() {
                 <CardContent>
                   <CardTitle>TarTool.xyz</CardTitle>
                   <CardDescription>
-                    A multi-tool website that has a lot of tools like a lua compiler, an embed server for Discord. For more information visit the website.
+                    A multi-tool website that has a lot of tools like a lua compiler, a embed server for discord. For more information visit the website.
                   </CardDescription>
                 </CardContent>
                 <CardFooter>
@@ -99,7 +101,7 @@ export default function Home() {
                 <CardContent>
                   <CardTitle>Santo Reborn</CardTitle>
                   <CardDescription>
-                    Santo ware reborn, Santoware used to be a Roblox external cheat that was paid but now it's free and updated by our team.
+                    Santo ware reborn, Santoware used to be a roblox external cheat that was paid but now its free and updated by our team.
                   </CardDescription>
                 </CardContent>
                 <CardFooter>
@@ -120,7 +122,7 @@ export default function Home() {
                 <CardContent>
                   <CardTitle>Astoris.pro</CardTitle>
                   <CardDescription>
-                    Astoris.pro is a website that resells plenty of things. It's currently down due to VPS issues. Feel free to check it out when it's back up.
+                    Astoris.pro is a website that resells plenty of things. It&apos;s currently down due to VPS issues. Feel free to check it out when it&apos;s back up.
                   </CardDescription>
                 </CardContent>
                 <CardFooter>
@@ -141,7 +143,7 @@ export default function Home() {
                 <CardContent>
                   <CardTitle>Github</CardTitle>
                   <CardDescription>
-                    There's plenty of projects on my GitHub that you can check out. Feel free to check them out and star them if you like them. Also, feel free to contribute.
+                    Theres plenty of projects on my github that you can check out. Feel free to check them out and star them if you like them. Also feel free to contribute.
                   </CardDescription>
                 </CardContent>
                 <CardFooter>
@@ -155,13 +157,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* contact me section */}
       <section className="py-24">
         <div className="container mx-auto flex items-center justify-center">
           <div className="flex flex-col items-center gap-4">
             <Label className="text-4xl font-bold mb-2">Contact Me</Label>
             <Label className="text-lg text-center">
-              If you want to contact me feel free to reach out on Discord or Twitter. I'm always open to new ideas and I'm always looking for new projects to work on.
-              If you have any ideas or projects you want me to work on, feel free to contact me.
+              If you want to contact me feel free to contact me on discord or twitter. I&apos;m always open to new ideas and I&apos;m always looking for new projects to work on. If you have any ideas or projects you want me to work on feel free to contact me.
             </Label>
             <div className="flex gap-4">
               <a target="_blank" rel="noopener noreferrer">
@@ -173,7 +175,7 @@ export default function Home() {
                     <AlertDialogHeader>
                       <AlertDialogTitle>My Discord information</AlertDialogTitle>
                       <AlertDialogDescription>
-                        💬 91ba
+                       💬 91ba
                       </AlertDialogDescription>
                     </AlertDialogHeader>
                     <AlertDialogFooter>
@@ -183,28 +185,29 @@ export default function Home() {
                 </AlertDialog>
               </a>
               <a href="https://github.com/targeteater" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline">🐦 GitHub</Button>
+                <Button variant="outline">🐦 Github</Button>
               </a>
             </div>
           </div>
         </div>
       </section>
 
+      {/* about me section */}
       <section className="py-24">
         <div className="container mx-auto flex items-center justify-center">
           <div className="flex flex-col items-center gap-4">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-96 h-96 rounded-full bg-gradient-radial from-green-500 to-transparent"></div>
-            </div>
+            </div>            
             <Label className="text-4xl font-bold mb-2">About Me</Label>
             <Label className="text-lg text-center">
-              Hello, I'm targeteater. I'm a developer that makes a lot of things. I'm currently working on various projects and I'm always open to new ideas. 
-              I have a lot of experience in Lua, JavaScript, TypeScript, Python, and more. If you have any ideas or projects you want me to work on, feel free to contact me.
+              Hello, I&apos;m targeteater. I&apos;m a developer that makes a lot of things. I&apos;m currently working on a lot of projects and I&apos;m always open to new ideas. I have a lot of experience in Lua, JavaScript, TypeScript & Python and more. I&apos;m always open to new ideas and I&apos;m always looking for new projects to work on. If you have any ideas or projects you want me to work on feel free to contact me.
             </Label>
           </div>
         </div>
       </section>
 
+      {/* footer */}
       <footer className="bg-white bg-opacity-0 backdrop-blur-md border-t border-black-200">
         <div className="container mx-auto flex items-center justify-center p-2.5">
           <div className="flex items-center gap-4">
